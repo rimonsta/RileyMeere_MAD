@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EMK-Pa-Taj">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="BEr-fX-iVo">
+            <objects>
+                <tabBarController id="EMK-Pa-Taj" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2QN-hj-oE3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="selectedIndex">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="hmd-3X-Sig" kind="relationship" relationship="viewControllers" id="vJF-Dh-hji"/>
+                        <segue destination="PZ6-WT-9Dm" kind="relationship" relationship="viewControllers" id="ttd-hK-EsX"/>
+                        <segue destination="XnQ-cp-kFI" kind="relationship" relationship="viewControllers" id="2MF-PO-q2Q"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vxf-wh-MX9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-262" y="98"/>
+        </scene>
+        <!--Merch-->
+        <scene sceneID="BsF-ID-ThQ">
+            <objects>
+                <navigationController title="Merch" id="hmd-3X-Sig" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Merch" image="bag" catalog="system" selectedImage="bag.fill" id="1da-of-Rnw"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0Zm-ln-2w7">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="NiV-Ye-gbW" kind="relationship" relationship="rootViewController" id="ern-y4-KeG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H5T-Uk-dh1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1174" y="775"/>
+        </scene>
+        <!--MERCH-->
+        <scene sceneID="gbW-gc-UY7">
+            <objects>
+                <viewController id="NiV-Ye-gbW" customClass="ViewController" customModule="Kody_s_World" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ngB-aB-iSO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="seal.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="h3R-Ja-E1K">
+                                <rect key="frame" x="85" y="325" width="245" height="247"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Coming Soon!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Za4-F7-YGg">
+                                <rect key="frame" x="150" y="438" width="114" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="70Q-J7-fVI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="MERCH" id="9N3-Qd-Hm4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HeA-QH-Mai" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1175.3623188405797" y="1530.8035714285713"/>
+        </scene>
+        <!--KODY'S WORLD-->
+        <scene sceneID="Ees-nG-Pxl">
+            <objects>
+                <viewController id="VcU-Yi-Wde" customClass="ViewController" customModule="Kody_s_World" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gdi-0q-WsX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="KodyMain" translatesAutoresizingMaskIntoConstraints="NO" id="p0S-XQ-A83">
+                                <rect key="frame" x="5" y="188" width="405" height="520"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="iaa-qY-hwS" appends="YES" id="TTR-KF-d2W"/>
+                                    <outletCollection property="gestureRecognizers" destination="VoH-Cc-M6o" appends="YES" id="rz0-CU-yLA"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="swipe to pet!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uU0-8F-Ciq">
+                                <rect key="frame" x="158" y="716" width="98" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="heart.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="1Fi-cp-oRw">
+                                <rect key="frame" x="231" y="307.5" width="58" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="heart.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Q0u-Yb-4yb">
+                                <rect key="frame" x="125" y="357.5" width="58" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="heart.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="iIT-UZ-vjF">
+                                <rect key="frame" x="198" y="415.5" width="58" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="heart.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="B6j-Dk-nhL">
+                                <rect key="frame" x="97" y="477.5" width="58" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wF8-Ne-flc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="KODY'S WORLD" id="sfW-gS-BiL"/>
+                    <connections>
+                        <outlet property="heart1" destination="1Fi-cp-oRw" id="mLl-GA-fvy"/>
+                        <outlet property="heart2" destination="Q0u-Yb-4yb" id="aP5-je-wa8"/>
+                        <outlet property="heart3" destination="iIT-UZ-vjF" id="0eN-xp-pw9"/>
+                        <outlet property="heart4" destination="B6j-Dk-nhL" id="r60-dy-KAf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JZJ-eR-WsW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="up" id="iaa-qY-hwS">
+                    <connections>
+                        <action selector="animateHeartsUp:" destination="VcU-Yi-Wde" id="RNZ-7Y-Ffr"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="VoH-Cc-M6o"/>
+            </objects>
+            <point key="canvasLocation" x="-262.31884057971018" y="1530.8035714285713"/>
+        </scene>
+        <!--MINIGAME-->
+        <scene sceneID="ir7-CA-Xbv">
+            <objects>
+                <viewController id="hNY-T7-25r" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bCD-jH-OI5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="CWP-nI-eJS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="MINIGAME" id="7Wt-JV-5ZT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dh9-ct-N2h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="703" y="1531"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="2PL-X3-1Kt">
+            <objects>
+                <navigationController title="Home" id="PZ6-WT-9Dm" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" selectedImage="house.fill" id="Due-Em-co3"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="C2T-aU-Klw">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="VcU-Yi-Wde" kind="relationship" relationship="rootViewController" id="hDj-BN-6cd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fz4-Kf-uqi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-262" y="775"/>
+        </scene>
+        <!--Minigame-->
+        <scene sceneID="eWF-oI-eEO">
+            <objects>
+                <navigationController title="Minigame" id="XnQ-cp-kFI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Minigame" image="gamecontroller" catalog="system" selectedImage="gamecontroller.fill" id="676-cO-zDg"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="45z-IF-2dQ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="hNY-T7-25r" kind="relationship" relationship="rootViewController" id="wTQ-rO-Ndo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2TF-Yc-275" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="703" y="775"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="KodyMain" width="1024" height="1365.3333740234375"/>
+        <image name="bag" catalog="system" width="128" height="128"/>
+        <image name="bag.fill" catalog="system" width="128" height="128"/>
+        <image name="gamecontroller" catalog="system" width="128" height="80"/>
+        <image name="gamecontroller.fill" catalog="system" width="128" height="80"/>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
+        <image name="house" catalog="system" width="128" height="106"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="seal.fill" catalog="system" width="128" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EMK-Pa-Taj">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="BEr-fX-iVo">
+            <objects>
+                <tabBarController id="EMK-Pa-Taj" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2QN-hj-oE3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="selectedIndex">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="hmd-3X-Sig" kind="relationship" relationship="viewControllers" id="vJF-Dh-hji"/>
+                        <segue destination="PZ6-WT-9Dm" kind="relationship" relationship="viewControllers" id="ttd-hK-EsX"/>
+                        <segue destination="XnQ-cp-kFI" kind="relationship" relationship="viewControllers" id="2MF-PO-q2Q"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vxf-wh-MX9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-262" y="98"/>
+        </scene>
+        <!--Merch-->
+        <scene sceneID="BsF-ID-ThQ">
+            <objects>
+                <navigationController title="Merch" id="hmd-3X-Sig" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Merch" image="bag" catalog="system" selectedImage="bag.fill" id="1da-of-Rnw"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0Zm-ln-2w7">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="NiV-Ye-gbW" kind="relationship" relationship="rootViewController" id="ern-y4-KeG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H5T-Uk-dh1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1174" y="775"/>
+        </scene>
+        <!--MERCH-->
+        <scene sceneID="gbW-gc-UY7">
+            <objects>
+                <viewController id="NiV-Ye-gbW" customClass="MerchViewController" customModule="Kody_s_World" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ngB-aB-iSO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="coming-soon" translatesAutoresizingMaskIntoConstraints="NO" id="R4H-0h-ycs">
+                                <rect key="frame" x="107" y="348" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="R4H-0h-ycs" secondAttribute="height" multiplier="1:1" id="Cnk-eE-285"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="70Q-J7-fVI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="R4H-0h-ycs" firstAttribute="centerX" secondItem="ngB-aB-iSO" secondAttribute="centerX" id="HtA-kT-GTb"/>
+                            <constraint firstItem="R4H-0h-ycs" firstAttribute="centerY" secondItem="ngB-aB-iSO" secondAttribute="centerY" id="mxX-jC-gWV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="MERCH" id="9N3-Qd-Hm4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HeA-QH-Mai" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1175.3623188405797" y="1530.8035714285713"/>
+        </scene>
+        <!--KODY'S WORLD-->
+        <scene sceneID="Ees-nG-Pxl">
+            <objects>
+                <viewController id="VcU-Yi-Wde" customClass="ViewController" customModule="Kody_s_World" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gdi-0q-WsX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="WlX-5R-3jp">
+                                <rect key="frame" x="0.0" y="138" width="414" height="625"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" image="KodyMain" translatesAutoresizingMaskIntoConstraints="NO" id="p0S-XQ-A83">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="596.5"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="iaa-qY-hwS" appends="YES" id="TTR-KF-d2W"/>
+                                        </connections>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="swipe up to pet Kody!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uU0-8F-Ciq">
+                                        <rect key="frame" x="0.0" y="604.5" width="414" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wF8-Ne-flc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WlX-5R-3jp" firstAttribute="leading" secondItem="wF8-Ne-flc" secondAttribute="leading" id="9ZH-oo-fgZ"/>
+                            <constraint firstItem="wF8-Ne-flc" firstAttribute="trailing" secondItem="WlX-5R-3jp" secondAttribute="trailing" id="Met-1F-H4N"/>
+                            <constraint firstItem="WlX-5R-3jp" firstAttribute="top" secondItem="wF8-Ne-flc" secondAttribute="top" constant="50" id="izC-Hs-NyW"/>
+                            <constraint firstItem="wF8-Ne-flc" firstAttribute="bottom" secondItem="WlX-5R-3jp" secondAttribute="bottom" constant="50" id="o6B-p7-UIF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="KODY'S WORLD" id="sfW-gS-BiL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JZJ-eR-WsW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="up" id="iaa-qY-hwS">
+                    <connections>
+                        <segue destination="V0k-rY-qZ3" kind="presentation" identifier="" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="ZmA-BF-Q6P"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-262.31884057971018" y="1530.8035714285713"/>
+        </scene>
+        <!--HeartView-->
+        <scene sceneID="FmB-5Z-Agg">
+            <objects>
+                <viewController id="V0k-rY-qZ3" userLabel="HeartView" customClass="HeartViewController" customModule="Kody_s_World" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mcq-um-v0z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFit" image="hearts" translatesAutoresizingMaskIntoConstraints="NO" id="8GA-Ee-V2Z">
+                                <rect key="frame" x="0.0" y="94" width="414" height="659"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KlL-Aq-7jZ"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="KlL-Aq-7jZ" firstAttribute="bottom" secondItem="8GA-Ee-V2Z" secondAttribute="bottom" constant="60" id="3kZ-WE-qpm"/>
+                            <constraint firstItem="KlL-Aq-7jZ" firstAttribute="trailing" secondItem="8GA-Ee-V2Z" secondAttribute="trailing" id="AfS-eo-b3y"/>
+                            <constraint firstItem="8GA-Ee-V2Z" firstAttribute="top" secondItem="KlL-Aq-7jZ" secondAttribute="top" constant="50" id="D2H-mA-gmD"/>
+                            <constraint firstItem="8GA-Ee-V2Z" firstAttribute="leading" secondItem="KlL-Aq-7jZ" secondAttribute="leading" id="Pqo-Ok-7fM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Uce-0V-kV7"/>
+                    <connections>
+                        <outlet property="heartView" destination="8GA-Ee-V2Z" id="Bxm-LE-fHP"/>
+                        <segue destination="T80-6N-6hb" kind="unwind" identifier="unwindHeart" unwindAction="unwindToMain:" id="HWW-BA-ohf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZpL-1f-DdZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="T80-6N-6hb" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-262.31884057971018" y="2226.5625"/>
+        </scene>
+        <!--MINIGAME-->
+        <scene sceneID="ir7-CA-Xbv">
+            <objects>
+                <viewController id="hNY-T7-25r" customClass="GameViewController" customModule="Kody_s_World" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bCD-jH-OI5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="zdf-w9-IMb">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="ltC-PD-aQD">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="87"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="3" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKW-Tp-hcW">
+                                                <rect key="frame" x="8" y="8" width="20" height="71"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <state key="normal" image="gobackward" catalog="system"/>
+                                                <connections>
+                                                    <action selector="chooseItem:" destination="hNY-T7-25r" eventType="touchUpInside" id="eOA-cT-Ow5"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap on an item to give it to Kody!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="pAB-nk-Puh">
+                                                <rect key="frame" x="83.5" y="8" width="248" height="71"/>
+                                                <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXY-90-c3s">
+                                                <rect key="frame" x="388.5" y="8" width="17.5" height="71"/>
+                                                <state key="normal" image="speaker.slash.fill" catalog="system"/>
+                                                <connections>
+                                                    <action selector="playSound:" destination="hNY-T7-25r" eventType="touchUpInside" id="5XA-zW-WiC"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                    </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CowboyKody" translatesAutoresizingMaskIntoConstraints="NO" id="Sbq-0h-UIO">
+                                        <rect key="frame" x="0.0" y="107" width="414" height="381.5"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="GOA-gr-zlp">
+                                        <rect key="frame" x="0.0" y="508.5" width="414" height="216.5"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJB-ne-Pci">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="216.5"/>
+                                                <state key="normal" image="rock"/>
+                                                <connections>
+                                                    <action selector="chooseItem:" destination="hNY-T7-25r" eventType="touchUpInside" id="bYq-Dc-9f8"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C3T-rW-lGY">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="216.5"/>
+                                                <state key="normal" image="stick"/>
+                                                <connections>
+                                                    <action selector="chooseItem:" destination="hNY-T7-25r" eventType="touchUpInside" id="wqV-Lf-LPj"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CWP-nI-eJS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zdf-w9-IMb" firstAttribute="top" secondItem="CWP-nI-eJS" secondAttribute="top" id="7dZ-m9-21S"/>
+                            <constraint firstItem="CWP-nI-eJS" firstAttribute="bottom" secondItem="zdf-w9-IMb" secondAttribute="bottom" id="CED-cS-Znr"/>
+                            <constraint firstItem="zdf-w9-IMb" firstAttribute="leading" secondItem="CWP-nI-eJS" secondAttribute="leading" id="pgo-7o-xtQ"/>
+                            <constraint firstItem="CWP-nI-eJS" firstAttribute="trailing" secondItem="zdf-w9-IMb" secondAttribute="trailing" id="ulS-WY-qax"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="MINIGAME" id="7Wt-JV-5ZT"/>
+                    <connections>
+                        <outlet property="audioButton" destination="dXY-90-c3s" id="VLx-lW-cUp"/>
+                        <outlet property="cowboyKodyView" destination="Sbq-0h-UIO" id="3Ry-XZ-Nem"/>
+                        <outlet property="resetButton" destination="yKW-Tp-hcW" id="DGT-FA-3cH"/>
+                        <outlet property="rockButton" destination="gJB-ne-Pci" id="l4X-J3-2WT"/>
+                        <outlet property="stickButton" destination="C3T-rW-lGY" id="HRS-ou-iE8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dh9-ct-N2h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="702.89855072463774" y="1530.8035714285713"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="2PL-X3-1Kt">
+            <objects>
+                <navigationController title="Home" id="PZ6-WT-9Dm" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" selectedImage="house.fill" id="Due-Em-co3"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="C2T-aU-Klw">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="VcU-Yi-Wde" kind="relationship" relationship="rootViewController" id="hDj-BN-6cd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fz4-Kf-uqi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-262" y="775"/>
+        </scene>
+        <!--Minigame-->
+        <scene sceneID="eWF-oI-eEO">
+            <objects>
+                <navigationController title="Minigame" id="XnQ-cp-kFI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Minigame" image="gamecontroller" catalog="system" selectedImage="gamecontroller.fill" id="676-cO-zDg"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="45z-IF-2dQ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="hNY-T7-25r" kind="relationship" relationship="rootViewController" id="wTQ-rO-Ndo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2TF-Yc-275" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="703" y="775"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CowboyKody" width="166.5" height="166.5"/>
+        <image name="KodyMain" width="133" height="236.5"/>
+        <image name="bag" catalog="system" width="128" height="128"/>
+        <image name="bag.fill" catalog="system" width="128" height="128"/>
+        <image name="coming-soon" width="200" height="200"/>
+        <image name="gamecontroller" catalog="system" width="128" height="80"/>
+        <image name="gamecontroller.fill" catalog="system" width="128" height="80"/>
+        <image name="gobackward" catalog="system" width="121" height="128"/>
+        <image name="hearts" width="133" height="236.5"/>
+        <image name="house" catalog="system" width="128" height="106"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="rock" width="66" height="45"/>
+        <image name="speaker.slash.fill" catalog="system" width="124" height="128"/>
+        <image name="stick" width="97" height="72"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

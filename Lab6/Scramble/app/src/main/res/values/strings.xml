@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Scramble</string>
+    <string name="gameHint">Unscramble the sentence!</string>
+    <string name="scrambledSentence">HMYUTP UYPMDT ADH A ETGAR LFLA</string>
+    <string name="editTextHint">Type your answer</string>
+    <string name="buttonText">Guess</string>
+    <string name="unscrambledSentence">HUMPTY DUMPTY HAD A GREAT FALL</string>
+</resources>

@@ -8,6 +8,7 @@
     <string name="vaccineRadioGroupLabel">*Select preferred vaccine distributor:</string>
     <string name="modernaVax">Moderna</string>
     <string name="pfizerVax">Pfizer</string>
+    <string name="johnsonVax">J&amp;J</string>
     <string name="buttonText">Generate Fake Vaccine Card</string>
 
     <string name="subHeading">Official Documentation</string>

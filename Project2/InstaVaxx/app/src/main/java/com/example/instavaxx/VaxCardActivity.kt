@@ -18,12 +18,15 @@ class VaxCardActivity : AppCompatActivity() {
         setContentView(R.layout.activity_vax_card)
 
         // change action bar to drawable gradient
+        // code help: https://www.geeksforgeeks.org/how-to-set-gradient-and-image-backgrounds-for-actionbar-in-android/
         supportActionBar?.setBackgroundDrawable(resources.getDrawable(R.drawable.app_bar_gradient))
 
         fullName = findViewById(R.id.fullNameTextView)
         userFullName = intent.getStringExtra("userFullName")
         userFullName?.let { fullName.text = "$userFullName" }
 
+        // create media player and play immediately
+        // code help: https://www.youtube.com/watch?v=DaLPIC4NbYU
         val mediaPlayer = MediaPlayer.create(this, R.raw.instavaxx)
         mediaPlayer.start()
 

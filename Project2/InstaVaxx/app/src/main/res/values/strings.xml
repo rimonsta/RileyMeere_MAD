@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">InstaVaxx</string>
+
+    <string name="firstName">*First Name</string>
+    <string name="middleInitial">MI</string>
+    <string name="lastName">*Last Name</string>
+    <string name="dateOfBirthHint">*DOB</string>
+    <string name="vaccineRadioGroupLabel">*Select preferred vaccine distributor:</string>
+    <string name="modernaVax">Moderna</string>
+    <string name="pfizerVax">Pfizer</string>
+    <string name="buttonText">Generate Fake Vaccine Card</string>
+
+    <string name="subHeading">Official Documentation</string>
+    <string name="heading">Certified Biohazard</string>
+    <string name="docInfo">Liar, liar, pants on fire. You officially qualify as a selfish jerk who should not be allowed to attend any public gathering. Nobody wants to hang out with a germ-y plague spreader.</string>
+    <string name="nameLabel">Name</string>
+    <string name="categoryHeading">Category</string>
+    <string name="scoreHeading">Score</string>
+    <string name="commentsHeading">Comments</string>
+    <string name="category1">Hygiene</string>
+    <string name="category2">Personality</string>
+    <string name="category3">Social Awareness</string>
+    <string name="cat1ScoreText">2</string>
+    <string name="cat2ScoreText">0</string>
+    <string name="cat3ScoreText">-10</string>
+    <string name="cat1CommentText">smells really bad</string>
+    <string name="cat2CommentText">super lame, kinda racist</string>
+    <string name="cat3CommentText">completely delusional</string>
+    <string name="infoURL">https://www.vaccines.gov/search/</string>
+</resources>
